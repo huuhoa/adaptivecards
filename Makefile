@@ -6,3 +6,9 @@ sdist:
 
 upload:
 	python3 -m twine upload dist/* --verbose
+
+bump_minor:
+	bump2version minor
+
+bump_major:
+	bump2version major
