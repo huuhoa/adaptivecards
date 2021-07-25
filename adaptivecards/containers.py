@@ -110,7 +110,7 @@ class ColumnSet(Element):
 
 
 class Column(Element):
-    element_type = 'ColumnSet'
+    element_type = 'Column'
     items = PropertyType(type=list, key_name='items')
     backgroundImage = PropertyType(type=str, key_name='backgroundImage')
     bleed = PropertyType(type=bool, key_name='bleed')
