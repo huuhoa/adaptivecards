@@ -40,7 +40,7 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/huuhoa/adaptivecards',
-    version='0.4.0',
+    version='0.4.1',
     zip_safe=False,
 )
 
