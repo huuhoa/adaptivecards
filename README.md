@@ -135,7 +135,7 @@ For more information on how to use this package please check the project documen
 
 The following resources were influential in the creation of this project:
 
-- The package was copied from [PyAdaptiveCards](https://github.com/CiscoSE/pyadaptivecards)
+- The package's README was copied partially from [PyAdaptiveCards](https://github.com/CiscoSE/pyadaptivecards)
 
 ## License
 
