@@ -58,3 +58,18 @@ class AdaptiveCard(BareObject):
         self.set_data('type', 'AdaptiveCard')
         self.set_data('version', '1.2')
         self.set_data('$schema', 'http://adaptivecards.io/schemas/adaptive-card.json')
+
+
+
+class TeamsAdaptiveMessage(BareObject):
+    element_type = PropertyType(type=str, key_name='type')
+    attachments = PropertyType(type=list)
+
+    def __init__(self, card: AdaptiveCard):
+        super(TeamsAdaptiveMessage, self).__init__()
+        self.element_type = 'message'
+        self.attachments = [{
+            "contentType": "application/vnd.microsoft.card.adaptive",
+            "contentUrl": None,
+            "content": card
+        }]
