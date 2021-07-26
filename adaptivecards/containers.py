@@ -1,6 +1,7 @@
 from .baseobject import BareObject
 from .baseobject import Element
 from .baseobject import PropertyType
+from . import types
 
 
 class Container(Element):
@@ -86,8 +87,8 @@ class Container(Element):
     bleed = PropertyType(type=bool)
     min_height = PropertyType(type=str, key_name='minHeight')
     background_image = PropertyType(type=str, key_name='backgroundImage')
-    vertical_content_alignment = PropertyType(type=str, key_name='verticalContentAlignment')
-    style = PropertyType(type=str)
+    vertical_content_alignment = PropertyType(type=types.VerticalContentAlignment, key_name='verticalContentAlignment')
+    style = PropertyType(type=types.ContainerStyleType)
     select_action = PropertyType(type=str, key_name='selectAction')
     items = PropertyType(type=list)
 
@@ -103,10 +104,10 @@ class ColumnSet(Element):
     element_type = 'ColumnSet'
     columns = PropertyType(type=list)
     select_action = PropertyType(type=str, key_name='selectAction')
-    style = PropertyType(type=str)
+    style = PropertyType(type=types.ContainerStyleType)
     bleed = PropertyType(type=bool)
     min_height = PropertyType(type=str, key_name='minHeight')
-    horizontal_alignment = PropertyType(type=str, key_name='horizontalAlignment')
+    horizontal_alignment = PropertyType(type=types.HorizontalAlignment, key_name='horizontalAlignment')
 
 
 class Column(Element):

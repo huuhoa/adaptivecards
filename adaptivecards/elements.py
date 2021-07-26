@@ -1,18 +1,19 @@
 from .baseobject import BareObject
 from .baseobject import Element
 from .baseobject import PropertyType
+from . import types
 
 
 class TextBlock(Element):
     element_type = 'TextBlock'
     text = PropertyType(type=str, key_name='text')
     font_type = PropertyType(type=str, key_name='fontType')
-    color = PropertyType(type=str, key_name='color')
-    horizontalAlignment = PropertyType(type=str, key_name='horizontalAlignment')
+    color = PropertyType(type=types.ColorType, key_name='color')
+    horizontalAlignment = PropertyType(type=types.HorizontalAlignment, key_name='horizontalAlignment')
     isSubtle = PropertyType(type=bool, key_name='isSubtle')
     maxLines = PropertyType(type=int, key_name='maxLines')
-    size = PropertyType(type=str, key_name='size')
-    weight = PropertyType(type=str, key_name='weight')
+    size = PropertyType(type=types.FontSize, key_name='size')
+    weight = PropertyType(type=types.FontWeight, key_name='weight')
     wrap = PropertyType(type=bool, key_name='wrap')
 
 
@@ -22,14 +23,13 @@ class Image(Element):
     altText = PropertyType(type=str, key_name='altText')
     backgroundColor = PropertyType(type=str, key_name='backgroundColor')
     height = PropertyType(type=str, key_name='height')
-    horizontalAlignment = PropertyType(type=str, key_name='horizontalAlignment')
+    horizontalAlignment = PropertyType(type=types.HorizontalAlignment, key_name='horizontalAlignment')
     selectAction = PropertyType(type=str, key_name='selectAction')
-    size = PropertyType(type=str, key_name='size')
-    style = PropertyType(type=str, key_name='style')
+    size = PropertyType(type=types.ImageSize, key_name='size')
+    style = PropertyType(type=types.ImageStyle, key_name='style')
     width = PropertyType(type=str, key_name='width')
 
 
-# TODO: Correct type for sources as array of MediaSource
 class Media(Element):
     element_type = 'Media'
     sources = PropertyType(type=list, key_name='sources')

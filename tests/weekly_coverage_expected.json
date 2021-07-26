@@ -1,0 +1,168 @@
+{
+  "attachments": [
+    {
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "body": [
+          {
+            "items": [
+              {
+                "size": "extraLarge",
+                "text": "DOS - Weekly Coverage Report",
+                "type": "TextBlock",
+                "wrap": true
+              },
+              {
+                "isSubtle": true,
+                "spacing": "none",
+                "text": "Reported week: W35",
+                "type": "TextBlock",
+                "wrap": true
+              },
+              {
+                "spacing": "small",
+                "text": "The weekly coverage report summaries **New Code Coverage** and **Overall Coverage** at portfolio level for W35 and comparisons to previous week.",
+                "type": "TextBlock",
+                "wrap": true
+              }
+            ],
+            "type": "Container"
+          },
+          {
+            "items": [
+              {
+                "columns": [
+                  {
+                    "items": [
+                      {
+                        "color": "accent",
+                        "size": "medium",
+                        "spacing": "none",
+                        "text": "Coverage",
+                        "type": "TextBlock",
+                        "weight": "bolder",
+                        "wrap": true
+                      },
+                      {
+                        "size": "extraLarge",
+                        "spacing": "none",
+                        "text": "32.99% ",
+                        "type": "TextBlock",
+                        "wrap": true
+                      },
+                      {
+                        "color": "good",
+                        "spacing": "none",
+                        "text": "\u25b2 1.24 (3.22%)",
+                        "type": "TextBlock",
+                        "wrap": true
+                      }
+                    ],
+                    "type": "Column",
+                    "width": "stretch"
+                  },
+                  {
+                    "items": [
+                      {
+                        "facts": [
+                          {
+                            "title": "Average",
+                            "value": "32.99% "
+                          },
+                          {
+                            "title": "Max",
+                            "value": "33.24% "
+                          },
+                          {
+                            "title": "Min",
+                            "value": "30.23% "
+                          }
+                        ],
+                        "type": "FactSet"
+                      }
+                    ],
+                    "type": "Column",
+                    "width": "auto"
+                  }
+                ],
+                "separator": true,
+                "type": "ColumnSet"
+              }
+            ],
+            "spacing": "medium",
+            "type": "Container"
+          },
+          {
+            "items": [
+              {
+                "columns": [
+                  {
+                    "items": [
+                      {
+                        "color": "accent",
+                        "size": "medium",
+                        "spacing": "none",
+                        "text": "New Code Coverage",
+                        "type": "TextBlock",
+                        "weight": "bolder",
+                        "wrap": true
+                      },
+                      {
+                        "size": "extraLarge",
+                        "spacing": "none",
+                        "text": "47.47% ",
+                        "type": "TextBlock",
+                        "wrap": true
+                      },
+                      {
+                        "color": "attention",
+                        "spacing": "none",
+                        "text": "\u25bc 1.40 (3.45%)",
+                        "type": "TextBlock",
+                        "wrap": true
+                      }
+                    ],
+                    "type": "Column",
+                    "width": "stretch"
+                  },
+                  {
+                    "items": [
+                      {
+                        "facts": [
+                          {
+                            "title": "Average",
+                            "value": "47.47% "
+                          },
+                          {
+                            "title": "Max",
+                            "value": "50.05% "
+                          },
+                          {
+                            "title": "Min",
+                            "value": "45.05% "
+                          }
+                        ],
+                        "type": "FactSet"
+                      }
+                    ],
+                    "type": "Column",
+                    "width": "auto"
+                  }
+                ],
+                "separator": true,
+                "type": "ColumnSet"
+              }
+            ],
+            "spacing": "medium",
+            "type": "Container"
+          }
+        ],
+        "type": "AdaptiveCard",
+        "version": "1.2"
+      },
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "contentUrl": null
+    }
+  ],
+  "type": "message"
+}

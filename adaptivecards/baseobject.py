@@ -1,5 +1,5 @@
 import json
-
+from . import types
 
 class PropertyType:
     def __init__(self, type, key_name=None):
@@ -69,7 +69,7 @@ class Element(BareObject):
     fallback = PropertyType(type=str)
     height = PropertyType(type=str)
     separator = PropertyType(type=bool)
-    spacing = PropertyType(type=str)
+    spacing = PropertyType(type=types.SpacingType)
     visible = PropertyType(key_name='isVisible', type=bool)
     id = PropertyType(type=str)
     requires = PropertyType(type=dict)
